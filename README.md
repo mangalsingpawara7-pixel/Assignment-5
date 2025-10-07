@@ -3,19 +3,21 @@ Deployment Link : https://imaginative-medovik-44ab52.netlify.app/
       
 Permalink : https://68e142cf3bf38eaca2682425--imaginative-medovik-44ab52.netlify.app/
 
-# React + Vite
+Enhancement Decisions – Overview
+Used React with Vite:
+Vite was chosen for its faster build times and better development experience compared to CRA (Create React App).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Component-Based Structure:
+The UI was broken into reusable components for better maintainability.
 
-Currently, two official plugins are available:
+API Handling with useEffect:
+Data fetching was handled using the fetch() API inside useEffect, ensuring the API call runs only on component mount.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Loading and Error States:
+Implemented basic loading indicators and error handling to improve user experience.
 
-## React Compiler
+Responsive Design:
+CSS was used to ensure the layout works across different screen sizes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Deployment via Netlify:
+Netlify was used for quick and free deployment with a custom build command for Vite (npm run build).
