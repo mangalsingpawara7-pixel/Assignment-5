@@ -1,6 +1,7 @@
 
 Deployment Link : https://imaginative-medovik-44ab52.netlify.app/
-      Permalink : https://68e142cf3bf38eaca2682425--imaginative-medovik-44ab52.netlify.app/
+      
+Permalink : https://68e142cf3bf38eaca2682425--imaginative-medovik-44ab52.netlify.app/
 
 # React + Vite
 
