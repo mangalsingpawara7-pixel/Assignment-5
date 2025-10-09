@@ -10,7 +10,7 @@ const ProductList = () => {
 
     return (
         <div className="product-list">
-            {data && data.slice(1, 37).map(product => (
+            {data && data.slice().map(product => (
                 <div key={product.id} className="product-card">
                     <img src={product.images[0]} alt={product.title} />
                     <h3>{product.title}</h3>
